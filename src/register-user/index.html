@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- bootstrap -->
+
+    <!-- scss -->
+
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../src/register-user/main.css">
+
+    <!-- scss -->
+
+
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header__inner row d-flex justify-content-xxl-between">
+                <div class="header__menu col-xl-8 d-flex align-items-center">
+
+                    <div class="header__menu__logo">
+                        <img src="../../img/header__logo.svg" alt="">
+                    </div>
+
+                    <div class="header__menu__nav col-xl-10">
+                        <a href="#" class="header__menu__nav__item">Партнеры</a>
+                        <a href="#" class="header__menu__nav__item">О проекте</a>
+                        <a href="#" class="header__menu__nav__item">Истории успеха</a>
+                        <a href="#" class="header__menu__nav__item">Контакты</a>
+                    </div>
+
+                </div>
+
+
+                <div class="header__user col-xl-4 d-flex align-items-center justify-content-end">
+
+                    <button class="header__user__btn-new header__btn">Новичкам
+                        <img class="header__user__btn-new__img" src="../../img/header__btn__question.svg" alt="">
+                    </button>
+
+                    <button class="header__user__btn-enter header__btn">Войти
+                        <img class="header__user__btn-enter__img" src="../../img/header__btn__user.svg" alt="">
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="register row">
+        <div class="register__inner col d-flex align-items-center flex-column">
+
+            <h1 class="register__inner__title row">
+                Регистрация
+            </h1>
+
+            <button class="register__inner__btn row">
+                <img class="register__inner__btn__img" src="../../img/register__email.svg" alt="">
+                Регистрация по электронной почте
+            </button>
+
+            <form class="register__inn-form row d-flex align-items-center">
+                <label class="register__inn-label" for="register__input-inn">ИНН юридического лица или ИП</label>
+                <input class="register__inn-input" type="number" id="register__input-inn">
+            </form>
+
+            <form class="register__number-form row d-flex align-items-center">
+                <label class="register__number-label" for="register__input-number">Номер телефона</label>
+                <input class="register__number-input" type="number" id="register__input-number" value="7">
+            </form>
+
+            <form class="register__password-form row d-flex align-items-center">
+                <label class="register__password-label" for="register__input-number">Пароль</label>
+                <input class="register__password-input" type="password" id="register__input-password" value="">
+                <img src="" alt="">
+            </form>
+
+            <form class="register__repeat-password-form row d-flex align-items-center">
+                <label class="register__repeat-password-label" for="register__input-number">Повторите пароль</label>
+                <input class="register__repeat-password-input" type="text" id="register__input-repeat-password"
+                    value="">
+                <img src="" alt="">
+            </form>
+
+            <div class="register__code d-flex justify-content-start flex-column row">
+
+                <div class="register__code__title">Введите код с картинки</div>
+
+                <div class="register__code__inner d-flex justify-content-between">
+                    <div class="register__code__wrapper-img">
+
+                        <div class="register__code__img">
+                            <img src="../../img/register__img.png" alt="">
+                        </div>
+
+                        <input class="register__code__input">
+
+                    </div>
+
+                    <div class="register__code__wrapper-btns d-flex align-items-end ">
+                        <button class="register__code__btn">
+                            Отмена
+                        </button>
+
+                        <button class="register__code__btn">
+                            Ок
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="register__btn">
+                Зарегистрироваться
+            </button>
+
+            <div class="personal row d-flex justify-content-between">
+                <form action="/" class="personal__form d-flex align-items-center">
+
+                    <input type="checkbox" name="" id="personal__checkbox" class="personal__checkbox">
+
+                    <label for="personal__checkbox" class="personal__text">Нажимая на кнопку, вы даете согласие
+                        <a class="highlight" href="#">на
+                            обработку персональных данных
+                            и
+                            соглашайтесь с политикой конфиденциальности</a>
+
+                    </label>
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer class="footer d-flex align-items-center">
+        <div class="container">
+            <div class="footer__inner row d-flex justify-content-between">
+
+                <div class="footer__nav col d-flex ">
+                    <a href="#" class="footer__nav__item">
+                        <img src="../../img/footer__logo.svg" alt="">О проекте
+                    </a>
+                    <a href="#" class="footer__nav__item">Производителям</a>
+                    <a href="#" class="footer__nav__item">Партнеры</a>
+                    <a href="#" class="footer__nav__item">Контакты</a>
+
+                </div>
+
+                <div class="footer__contact col d-flex justify-content-end">
+
+                    <a href="tel:+7 (3952) 300-300<" class="footer__contact__item">+7 (3952) 300-300</a>
+                    <a href="mailto:info@slata.com" class="footer__contact__item">info@slata.com</a>
+
+                </div>
+
+            </div>
+            <div class="footer__politics row">
+                <div class="footer__politics_item col">
+                    © 2023 «Местный продукт»
+                </div>
+
+                <a href="#" class="footer__politics_item col d-flex justify-content-end">
+                    Политика обработки персональных данных
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+
+</body>
+
+</html>

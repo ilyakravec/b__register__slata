@@ -1,0 +1,259 @@
+// fonts Inter all
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+//vars
+
+@import "./variables.scss";
+
+
+//REMOVE CSS DEFAULT STYLES
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article>*+* {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+label {
+    margin: 0;
+}
+
+// prevent default settings 
+a {
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+button {
+    border-style: none;
+    outline: none;
+
+    :focus {
+        border: none;
+        border-color: no;
+    }
+
+    :active {
+        border: none;
+        border-color: none;
+    }
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+
+
+input[type="number"]::-webkit-outer-spin-button {
+
+
+    -webkit-appearance: none;
+
+    &:active {
+        border-color: none;
+        outline: none;
+    }
+
+    &:focus {
+        border-color: none;
+        outline: none;
+    }
+
+    margin: 0;
+
+}
+
+
+// common styles
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: $dark-green;
+    box-sizing: border-box;
+}
+
+
+//  header
+
+
+.header {
+
+    padding-top: 15px;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+
+    &__menu {
+
+        column-gap: 40px;
+
+        &__logo {
+            min-width: 193px;
+        }
+
+        &__nav {
+            display: flex;
+            column-gap: 30px;
+        }
+    }
+
+    &__user {
+        column-gap: 30px;
+
+        &__btn-new {
+            position: relative;
+            padding: 9px 20px 9px 53px;
+
+
+            &__img {
+                position: absolute;
+                top: 50%;
+                left: 15px;
+                transform: translateY(-50%);
+                z-index: 5;
+            }
+        }
+
+        &__btn-enter {
+            position: relative;
+            padding: 9px 40px 9px 80px;
+
+            &__img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 30px;
+            }
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+
+        border: 2px solid $light-green;
+        border-radius: 25px;
+
+        background-color: $light-green;
+        color: $main-green;
+
+        transition: .3s ease-in-out;
+
+        &:hover {
+            border: 2px solid $main-green;
+            background-color: $white;
+        }
+
+        &:visited {
+            border: 2px solid $main-green;
+            background-color: $white;
+        }
+    }
+}
+
+// footer
+
+.footer {
+    height: 210px;
+    background-color: $light-green;
+
+
+    &__nav {
+        column-gap: 30px;
+
+        font-size: 20px;
+        font-weight: 600;
+
+        margin-bottom: 50px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+        }
+    }
+
+    &__contact {
+        column-gap: 40px;
+
+        &__item {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}

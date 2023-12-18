@@ -1,0 +1,275 @@
+@import "../../styles/main.scss";
+@import "../../styles/variables.scss";
+
+
+// register
+
+.register {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    display: flex;
+
+
+    &__inn {
+
+        &-form {
+            position: relative;
+
+            @include form-styles;
+
+            margin-bottom: 25px;
+        }
+
+        &-label {
+            position: absolute;
+            top: -14px;
+            left: -11px;
+
+            @include label-styles;
+        }
+
+        &-input {
+            border: none;
+
+            @include input-styles;
+
+            &:focus {
+                border: none;
+            }
+
+            &:active {
+                border: none;
+            }
+        }
+    }
+
+    &__number {
+
+        &-form {
+            position: relative;
+            @include form-styles;
+
+            margin-bottom: 25px;
+        }
+
+        &-label {
+            position: absolute;
+            top: -15px;
+            left: -11px;
+            @include label-styles;
+        }
+
+        &-input {
+            @include input-styles;
+
+            border: none;
+
+            padding &:focus {
+                border: none;
+            }
+
+            &:active {
+                border: none;
+            }
+        }
+    }
+
+
+    &__password {
+
+        &-form {
+            position: relative;
+            @include form-styles;
+
+            margin-bottom: 25px;
+
+
+        }
+
+        &-label {
+            position: absolute;
+            top: -15px;
+            left: -11px;
+            @include label-styles;
+
+            color: $main-green
+        }
+
+        &-input {
+            @include input-styles;
+
+            border: none;
+
+            padding &:focus {
+                border: none;
+            }
+
+            &:active {
+                border: none;
+            }
+        }
+    }
+
+    &__repeat-password {
+
+        &-form {
+            position: relative;
+            @include form-styles;
+
+            margin-bottom: 25px;
+        }
+
+        &-label {
+            position: absolute;
+            top: -15px;
+            left: -11px;
+            @include label-styles;
+
+            color: $main-green
+        }
+
+        &-input {
+            @include input-styles;
+
+            border: none;
+
+            padding &:focus {
+                border: none;
+            }
+
+            &:active {
+                border: none;
+            }
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 430px;
+        margin: auto;
+
+        &__title {
+            font-size: 42px;
+            font-weight: 900;
+
+            margin-bottom: 35px;
+        }
+
+        &__btn {
+            position: relative;
+            display: inline-block;
+
+            border-radius: 10px;
+
+            background-color: $dark-green;
+
+            color: $white;
+
+            font-weight: 500;
+
+            padding: 14px 20px 14px 58px;
+
+            margin-bottom: 45px;
+
+            &__img {
+                position: absolute;
+                top: 50%;
+                left: 17px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__code {
+        width: 100%;
+        margin-bottom: 25px;
+
+        &__title {
+
+            font-size: 16px;
+            font-weight: 600;
+
+            color: $black;
+
+            margin-bottom: 12px;
+
+        }
+
+        &__wrapper-img {
+            width: 60%;
+        }
+
+        &__img {
+            padding-bottom: 30px;
+        }
+
+        &__input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+
+            border-bottom: 2px solid;
+
+            padding-left: 15px;
+        }
+
+        &__btn {
+            display: inline-block;
+
+            background-color: $white;
+            @include semi-bold-text;
+
+            font-size: 16px;
+        }
+
+    }
+
+    &__btn {
+        display: inline-block;
+
+        border-radius: 10px;
+
+        background-color: $main-green;
+        color: $white;
+
+        font-weight: 700;
+
+        padding: 25px 104px;
+
+
+        margin-bottom: 25px;
+    }
+}
+
+.personal {
+    width: 100%;
+    margin-bottom: 70px;
+
+    &__form {
+        column-gap: 20px;
+    }
+
+    &__checkbox {
+        width: 24px;
+        border: 1px solid $main-green;
+    }
+
+    &__text {
+        font-size: 14px;
+        max-width: 370px;
+
+        font-weight: 600;
+
+        .highlight {
+            color: $main-green;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

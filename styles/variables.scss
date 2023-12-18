@@ -1,0 +1,47 @@
+// variables
+
+$dark-green: #25291c;
+$main-green: #828D15;
+$light-green: #F3F4E8;
+
+$gray: #92948E;
+$white: #fff;
+$black: #000;
+
+// mixins
+
+
+
+
+@mixin input-styles {
+    width: 100%;
+    max-width: 400px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding-left: 18px;
+}
+
+@mixin form-styles {
+    width: 100%;
+    max-width: 400px;
+
+    height: 72px;
+    border: 2px solid $dark-green;
+    border-radius: 10px;
+}
+
+@mixin label-styles {
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 2;
+    background-color: $white;
+
+    padding: 0 15px
+}
+
+@mixin semi-bold-text {
+    font-weight: 500;
+}
