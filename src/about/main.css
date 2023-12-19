@@ -434,6 +434,7 @@ body {
 .join-us {
   background-color: #F3F4E8;
   margin-bottom: 60px;
+  padding-top: 60px;
 }
 .join-us__inner {
   height: 668px;
