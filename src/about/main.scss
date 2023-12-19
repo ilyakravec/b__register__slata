@@ -1,0 +1,421 @@
+@import "../../styles/main.scss";
+@import "../../styles/variables.scss";
+
+
+
+@font-face {
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geometria'), url('../../fonts/Geometria.woff') format('woff');
+}
+
+// unification first-block
+
+.unification {
+    column-gap: 110px;
+
+    &__inner {
+        padding: 88px 101px;
+        margin-bottom: $mblg;
+    }
+
+    &__title {
+        font-family: 'Geometria';
+        font-size: 75px;
+        font-weight: 400;
+
+        color: $deep-green;
+
+        margin-bottom: 5px;
+    }
+
+    &__sub-title {
+        font-family: 'Geometria';
+        font-size: 45px;
+        font-weight: 400;
+
+        color: $deep-green;
+
+    }
+
+    &__outer {
+        padding: 50px 0;
+        margin-bottom: $mblg;
+
+        &__item {
+            column-gap: 30px;
+
+            border-right: 1px solid $light-gray;
+
+            &:last-child {
+                border-right: 1px solid $white;
+            }
+
+            &__number {
+                font-size: 48px;
+                font-weight: 700;
+
+                color: $main-green;
+            }
+
+            &__text {
+                max-width: 180px;
+
+                font-size: 18px;
+                font-weight: 300;
+
+                color: $black;
+
+                line-height: 1.2;
+
+            }
+        }
+    }
+}
+
+// about second-block
+
+.about {
+
+    margin-bottom: $mblg;
+
+    .outer {
+        padding: 100px 60px;
+
+        background-color: $light-white;
+
+        border-radius: 30px;
+    }
+
+    &__inner {
+        height: 650px;
+
+        position: relative;
+
+        &__img {
+            position: absolute;
+            top: 62%;
+            right: 60px;
+            transform: translateY(-58%)
+        }
+
+        &__title {
+            @include h2;
+            margin-bottom: $mbmd;
+        }
+
+        &__text {
+            position: relative;
+            z-index: 5;
+
+            width: 100%;
+            max-width: 376px;
+            line-height: 1.6;
+
+            margin-bottom: $mbmd;
+
+            &-highlighted {
+                font-weight: 600;
+            }
+
+            img {
+                position: absolute;
+                top: -13px;
+                left: 0;
+
+                z-index: -1;
+            }
+        }
+
+        &__slider {
+            column-gap: 10px;
+
+            .null {
+                width: 33px;
+                height: 33px;
+            }
+
+            .rocket {
+                height: 86px;
+            }
+
+            img {
+                width: 68px;
+                height: 68px;
+            }
+        }
+    }
+
+
+}
+
+// benefits second-block
+
+.benefits {
+
+    .green-highlighted {
+        font-weight: 700;
+        color: $main-green;
+    }
+
+    &__title {
+        @include h3;
+        margin-bottom: $mbsm;
+    }
+
+    &__inner {
+        column-gap: 15px;
+
+        &__item {
+            width: 29%;
+
+            padding: 30px 40px;
+
+            background-color: $white;
+            border-radius: 20px;
+
+            img {
+                margin-bottom: 25px;
+            }
+
+            &__title {
+                font-size: 24px;
+                font-weight: 700;
+
+                margin-bottom: 16px;
+            }
+
+            &__text {
+                width: 100%;
+                max-width: 295px;
+
+                font-size: 16px;
+                line-height: 1.6;
+
+            }
+        }
+    }
+}
+
+// history third block 
+
+.history {
+    margin-bottom: $mblg;
+
+    &__inner {
+        padding: 100px 60px;
+
+        column-gap: 40px;
+
+
+        &__item {
+            position: relative;
+
+            &:nth-child(2) {
+                margin-top: 44px;
+            }
+
+            &:nth-child(3) {
+                margin-bottom: 74px;
+            }
+
+            &__title {
+                @include h2;
+            }
+
+            &__avatar-img {
+                margin-bottom: 100px;
+            }
+
+            &__name {
+                position: relative;
+                z-index: 5;
+
+                font-weight: 900;
+
+                margin-bottom: 18px;
+
+            }
+
+            &__name-2 {
+                position: relative;
+                z-index: 5;
+
+                font-size: 16px;
+                font-weight: 900;
+
+                line-height: 1;
+                margin-bottom: 18px;
+
+            }
+
+            &__organisation {
+                position: relative;
+                z-index: 5;
+
+                font-size: 12px;
+                font-weight: 500;
+                color: $deep-gray;
+
+                &__wrapper {
+
+                    column-gap: 10px;
+
+                    img {
+                        position: relative;
+                        z-index: 5;
+                    }
+
+                    margin-bottom: 18px;
+                }
+            }
+
+            &__text {
+                position: relative;
+                z-index: 5;
+
+                font-size: 16px;
+                line-height: 1;
+            }
+
+            &__img {
+                position: absolute;
+                width: 100%;
+                min-width: 376px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -21px;
+
+                z-index: 0;
+            }
+        }
+
+        .card {
+            width: 100%;
+            padding-top: 45px;
+            border: 20px solid rgba(255, 255, 255, .3);
+            border-radius: 50px;
+
+            background-color: $main-green;
+
+            box-shadow: 0 4px 10px rgba($color: #555A65, $alpha: 0.25);
+
+            color: $blue;
+
+        }
+    }
+}
+
+
+// join - us fouth block
+
+.join-us {
+    background-color: $light-green;
+
+    margin-bottom: $mbmd;
+
+    &__inner {
+        height: 668px;
+    }
+
+    &__left {
+        &__logo {
+            margin-bottom: 70px;
+        }
+
+        &__title {
+            font-size: 64px;
+            font-weight: 900;
+
+            line-height: 1;
+
+            margin-bottom: 70px;
+        }
+
+        &__text {
+            position: relative;
+
+            font-size: 20px;
+            color: $black;
+
+            margin-bottom: 70px;
+
+            &:before {
+
+                content: "";
+                display: block;
+
+                height: 2px;
+                width: 32px;
+
+                background-color: $black;
+
+                position: absolute;
+                top: 57%;
+                left: 226px;
+                transform: translateY(-57%);
+            }
+        }
+
+
+        &__wrapper {
+            column-gap: 10px;
+        }
+
+    }
+
+
+    &__right {
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            width: 100%;
+            max-width: 377px;
+            text-align: center;
+
+            color: $black;
+
+
+        }
+    }
+
+}
+
+.join-us__left__btn-xl {
+    font-size: 18px;
+    padding: 20px 33px;
+
+    width: 100%;
+    min-width: 390px;
+
+    border-radius: 10px;
+    color: $white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+
+    background-color: $dark-green;
+}
+
+.join-us__left__btn-sm {
+    font-size: 18px;
+    padding: 20px 33px;
+
+    width: 100%;
+    min-width: 270px;
+
+    border-radius: 10px;
+
+    color: $white;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background: linear-gradient(to right, #818C15, #A2AE16);
+}

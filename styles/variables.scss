@@ -2,14 +2,29 @@
 
 $dark-green: #25291c;
 $main-green: #828D15;
+$deep-green: #4D6B31;
+$jabbo: #454733;
 $light-green: #F3F4E8;
 
 $gray: #92948E;
+$light-gray: rgba(218, 218, 218, 0.7);
+$deep-gray: #706F6F;
+
+$light-white: #FAFAFA;
 $white: #fff;
+
 $black: #000;
 
-// mixins
+$deep-blue: #2B2D33;
+$blue: #555A65;
 
+// margins
+$mblg: 80px;
+$mbmd: 60px;
+$mbsm: 40px;
+
+
+// mixins
 
 
 
@@ -44,4 +59,23 @@ $black: #000;
 
 @mixin semi-bold-text {
     font-weight: 500;
+}
+
+@mixin bold-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin h2 {
+    font-size: 64px;
+    font-weight: 700;
+
+    color: $black;
+}
+
+@mixin h3 {
+    font-size: 28px;
+    font-weight: 700;
+
+    color: $jabbo;
 }
